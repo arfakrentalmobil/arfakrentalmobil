@@ -6,206 +6,266 @@
 <title>ARFAK RENTAL MOBIL - Manokwari</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #fff;
-    color: #222;
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f8f9fa;color:#222}
+
+header{
+background:linear-gradient(90deg,#ff6600,#000);
+color:white;
+padding:25px;
+text-align:center;
 }
 
-header {
-    background: linear-gradient(90deg, #ff6600, #000);
-    color: white;
-    padding: 20px;
-    text-align: center;
+header h1{font-size:32px;letter-spacing:1px}
+
+.hero{
+background:url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
+.hero h2{
+background:rgba(0,0,0,0.6);
+padding:25px 40px;
+border-radius:12px;
+font-size:28px;
 }
 
-nav {
-    background: #000;
-    padding: 10px;
-    text-align: center;
+.container{
+width:90%;
+max-width:1200px;
+margin:60px auto;
 }
 
-nav a {
-    color: #ff6600;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 500;
+.section-title{
+text-align:center;
+font-size:28px;
+margin-bottom:40px;
+color:#ff6600;
 }
 
-.hero {
-    background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+.car-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:25px;
 }
 
-.hero h2 {
-    background: rgba(0,0,0,0.6);
-    padding: 20px;
-    border-radius: 10px;
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+position:relative;
 }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #ff6600;
+.card img{
+width:100%;
+height:190px;
+object-fit:cover;
 }
 
-.car-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+background:#ff6600;
+color:white;
+padding:5px 10px;
+font-size:12px;
+border-radius:20px;
 }
 
-.card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    padding: 15px;
-    text-align: center;
+.card-content{
+padding:20px;
+text-align:center;
 }
 
-.card h3 {
-    margin: 10px 0;
+.price{
+color:#ff6600;
+font-weight:700;
+margin:10px 0;
 }
 
-.price {
-    color: #ff6600;
-    font-weight: bold;
+button{
+background:#ff6600;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
 }
 
-button {
-    background: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+button:hover{
+background:black;
 }
 
-button:hover {
-    background: black;
+form{
+max-width:500px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
-form {
-    max-width: 500px;
-    margin: auto;
+form input{
+width:100%;
+padding:12px;
+margin:12px 0;
+border:1px solid #ddd;
+border-radius:8px;
 }
 
-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
 }
 
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>ARFAK RENTAL MOBIL</h1>
-    <p>Sewa Mobil Terpercaya di Manokwari</p>
+<h1>ARFAK RENTAL MOBIL</h1>
+<p>Sewa Mobil Profesional di Manokwari</p>
 </header>
 
-<nav>
-    <a href="#mobil">Mobil</a>
-    <a href="#booking">Booking</a>
-</nav>
-
 <section class="hero">
-    <h2>Nyaman • Aman • Terpercaya</h2>
+<h2>Nyaman • Aman • Luxury Experience</h2>
 </section>
 
 <div class="container">
 
-    <h2 class="section-title" id="mobil">Daftar Mobil</h2>
+<h2 class="section-title">Daftar Mobil</h2>
 
-    <div class="car-grid">
+<div class="car-grid">
 
-        <div class="card">
-            <h3>Toyota Avanza</h3>
-            <p class="price">Rp 400.000 / hari</p>
-            <button onclick="pilihMobil('Toyota Avanza',400000)">Sewa</button>
-        </div>
+<div class="card">
+<span class="badge">Best Seller</span>
+<img src="https://source.unsplash.com/600x400/?toyota,alphard">
+<div class="card-content">
+<h3>Toyota Alphard</h3>
+<p class="price">Rp 2.500.000 / hari</p>
+<button onclick="pilihMobil('Toyota Alphard',2500000)">Sewa</button>
+</div>
+</div>
 
-        <div class="card">
-            <h3>Honda Brio</h3>
-            <p class="price">Rp 350.000 / hari</p>
-            <button onclick="pilihMobil('Honda Brio',350000)">Sewa</button>
-        </div>
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?pajero,sport">
+<div class="card-content">
+<h3>Mitsubishi Pajero Sport</h3>
+<p class="price">Rp 1.200.000 / hari</p>
+<button onclick="pilihMobil('Mitsubishi Pajero Sport',1200000)">Sewa</button>
+</div>
+</div>
 
-        <div class="card">
-            <h3>Toyota Fortuner</h3>
-            <p class="price">Rp 900.000 / hari</p>
-            <button onclick="pilihMobil('Toyota Fortuner',900000)">Sewa</button>
-        </div>
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?innova,reborn">
+<div class="card-content">
+<h3>Toyota Innova Reborn</h3>
+<p class="price">Rp 700.000 / hari</p>
+<button onclick="pilihMobil('Toyota Innova Reborn',700000)">Sewa</button>
+</div>
+</div>
 
-    </div>
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?hiace,premio">
+<div class="card-content">
+<h3>Hiace Premio / Commuter</h3>
+<p class="price">Mulai Rp 1.100.000 / hari</p>
+<button onclick="pilihMobil('Hiace',1100000)">Sewa</button>
+</div>
+</div>
 
-    <h2 class="section-title" id="booking">Form Booking</h2>
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?daihatsu,xenia">
+<div class="card-content">
+<h3>Daihatsu Xenia</h3>
+<p class="price">Rp 350.000 / hari</p>
+<button onclick="pilihMobil('Daihatsu Xenia',350000)">Sewa</button>
+</div>
+</div>
 
-    <form onsubmit="return kirimWhatsApp()">
-        <input type="text" id="nama" placeholder="Nama Lengkap" required>
-        <input type="text" id="mobilDipilih" placeholder="Mobil Dipilih" readonly required>
-        <input type="number" id="hari" placeholder="Jumlah Hari" required>
-        <input type="text" id="total" placeholder="Total Harga" readonly>
-        <button type="submit">Booking via WhatsApp</button>
-    </form>
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?innova,zenix">
+<div class="card-content">
+<h3>Toyota Innova Zenix</h3>
+<p class="price">Rp 850.000 / hari</p>
+<button onclick="pilihMobil('Toyota Innova Zenix',850000)">Sewa</button>
+</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Booking Sekarang</h2>
+
+<form onsubmit="return kirimWhatsApp()">
+<input type="text" id="nama" placeholder="Nama Lengkap" required>
+<input type="text" id="mobilDipilih" placeholder="Mobil Dipilih" readonly required>
+<input type="number" id="hari" placeholder="Jumlah Hari" required>
+<input type="text" id="total" placeholder="Total Harga" readonly>
+<button type="submit">Booking via WhatsApp</button>
+</form>
 
 </div>
 
 <footer>
-    &copy; 2026 ARFAK RENTAL MOBIL - Manokwari
+© 2026 ARFAK RENTAL MOBIL - Manokwari
 </footer>
 
-<script>
-let harga = 0;
+<a class="whatsapp-float" href="https://wa.me/6281347646868" target="_blank">
+Chat WhatsApp
+</a>
 
-function pilihMobil(nama, hargaMobil) {
-    document.getElementById("mobilDipilih").value = nama;
-    harga = hargaMobil;
-    window.location.href = "#booking";
+<script>
+let harga=0;
+
+function pilihMobil(nama,hargaMobil){
+document.getElementById("mobilDipilih").value=nama;
+harga=hargaMobil;
+window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});
 }
 
-document.getElementById("hari").addEventListener("input", function() {
-    let hari = this.value;
-    let total = harga * hari;
-    document.getElementById("total").value = "Rp " + total.toLocaleString();
+document.getElementById("hari").addEventListener("input",function(){
+let total=harga*this.value;
+document.getElementById("total").value="Rp "+total.toLocaleString();
 });
 
-function kirimWhatsApp() {
-    let nama = document.getElementById("nama").value;
-    let mobil = document.getElementById("mobilDipilih").value;
-    let hari = document.getElementById("hari").value;
-    let total = document.getElementById("total").value;
+function kirimWhatsApp(){
+let nama=document.getElementById("nama").value;
+let mobil=document.getElementById("mobilDipilih").value;
+let hari=document.getElementById("hari").value;
+let total=document.getElementById("total").value;
 
-    let pesan = `Halo ARFAK RENTAL MOBIL%0ASaya ingin booking:%0A%0ANama: ${nama}%0AMobil: ${mobil}%0ALama Sewa: ${hari} hari%0ATotal: ${total}`;
-
-    window.open("https://wa.me/6281347646868?text=" + pesan, "_blank");
-    return false;
+let pesan=`Halo ARFAK RENTAL MOBIL%0ASaya ingin booking:%0A%0ANama: ${nama}%0AMobil: ${mobil}%0ALama Sewa: ${hari} hari%0ATotal: ${total}`;
+window.open("https://wa.me/6281347646868?text="+pesan,"_blank");
+return false;
 }
 </script>
 
